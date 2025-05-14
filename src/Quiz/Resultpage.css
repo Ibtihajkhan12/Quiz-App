@@ -1,0 +1,78 @@
+.result-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Score section */
+  .score {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #4caf50;
+  }
+  
+  /* Answers section */
+  .answers {
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .answer {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .answer.correct {
+    background-color: #e8f5e9;
+  }
+  
+  .answer.incorrect {
+    background-color: #fce4e4;
+  }
+  
+  .answer .question {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .answer .user-answer,
+  .answer .correct-answer {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* Add space at the bottom of the page */
+  .result-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .restart-container {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .restart-btn {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .restart-btn:hover {
+    background-color: #0056b3;
+  }
+  
