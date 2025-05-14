@@ -11,6 +11,16 @@ const SignUp = () => {
 
   const handleSignUp = async (e) => {
     e.preventDefault();
+
+    if (!email || !password) {
+      Swal.fire({
+        icon: "warning",
+        title: "Missing Fields",
+        text: "Please enter both email and password.",
+      });
+      return;
+    }
+
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
@@ -39,8 +49,15 @@ const SignUp = () => {
       Swal.fire({
         icon: "success",
         title: "Success!",
-        text: "Check your email to confirm your account.",
+        text: "Check your email to confirm your account. Redirecting...",
+        timer: 3000,
+        showConfirmButton: false,
       });
+
+      // Redirect to login after 3 seconds
+      setTimeout(() => {
+        navigate("/login");
+      }, 3000);
     }
   };
 
